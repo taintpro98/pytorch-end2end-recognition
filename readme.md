@@ -12,6 +12,10 @@
 ### Step-by-step installation
 
 ```bash
+#dump environment to a file by running this script
+conda env export | grep -v "^prefix: " > environment.yml
+
+
 # install conda environment by running this script 
 conda env create -f environment.yml
 
